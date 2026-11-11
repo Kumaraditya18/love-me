@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: #9f1239;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  padding: 1.5rem;
+  text-align: center;
+  background: linear-gradient(180deg, #fff1f2, #ffe4e6);
+}
+
+.title {
+  margin: 0;
+  font-size: 1.85rem;
+  color: #e11d48;
+}
+
+.sub {
+  margin: 0;
+  color: #fb7185;
+}
+
+.cat-big {
+  width: min(280px, 85vw);
+  max-height: 50vh;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+.cta {
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #fb7185, #f472b6);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.before-yes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.mirror-btn {
+  padding: 0.7rem 1.25rem;
+  border: 2px solid #f9a8d4;
+  border-radius: 999px;
+  background: #fff;
+  color: #e11d48;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(244, 114, 182, 0.2);
+}
+
+.btns {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.yes {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #fb7185, #f472b6);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.no {
+  padding: 0.75rem 2rem;
+  border: 2px solid #fecdd3;
+  border-radius: 999px;
+  background: #fff;
+  color: #fda4af;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: not-allowed;
+  transition: transform 0.12s;
+}
+
+.back {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #f43f5e;
+}
+
+.cat-overlay {
+  width: min(300px, 88vw);
+  max-height: 55vh;
+  object-fit: contain;
+  border-radius: 0.75rem;
+}
+
+.overlay-done {
+  margin-top: 0.85rem;
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #fb7185, #f472b6);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(30, 10, 20, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.overlay-card {
+  position: relative;
+  width: min(340px, 92vw);
+  padding: 1.25rem 1rem 1.5rem;
+  border-radius: 1.25rem;
+  background: #fff1f2;
+  border: 2px solid #fbcfe8;
+  box-shadow: 0 16px 40px rgba(244, 114, 182, 0.35);
+}
+
+.overlay-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.65rem;
+  border: none;
+  background: none;
+  font-size: 1.25rem;
+  color: #fb7185;
+  cursor: pointer;
+}
+
+.aao {
+  margin: 0.65rem 0 0;
+  font-size: 1.25rem;
+  color: #be123c;
+  font-weight: 700;
+}
+
+.overlay-card .overlay-done {
+  margin-top: 0.85rem;
+}
