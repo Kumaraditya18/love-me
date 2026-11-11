@@ -59,13 +59,6 @@ export default function YesPage() {
                 className="cat-overlay"
               />
               {step === 2 && <p className="aao">aao na baby</p>}
-              <button
-                type="button"
-                className="overlay-done"
-                onClick={() => setNeedOpen(false)}
-              >
-                chotu badmosh
-              </button>
             </div>
           </div>,
           document.body,
